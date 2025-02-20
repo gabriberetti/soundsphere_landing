@@ -24,7 +24,7 @@ export default function Home() {
           Join SoundSphere Today!
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-normal drop-shadow-lg">
-            We're launching soon, and we are offering exclusive early access to list your masterclasses on SoundSphere. For the first 2 months, you keep 100% of the revenue—we won't take any commissions!
+            We&apos;re launching soon, and we are offering exclusive early access to list your masterclasses on SoundSphere. For the first 2 months, you keep 100% of the revenue—we won&apos;t take any commissions!
           </p>
           <Link href="/signup" className="btn-primary text-lg min-h-[44px] min-w-[200px] px-8 group inline-flex items-center">
             Sign Up Now
@@ -45,7 +45,7 @@ export default function Home() {
             </p>
             <div className="space-y-6 text-lg text-primary-200 leading-relaxed">
               <p>
-                SoundSphere empowers music producers to transform their expertise into income through high-quality online masterclasses. Whether you're an established artist or a rising star, our platform provides the tools and audience you need to succeed.
+                SoundSphere empowers music producers to transform their expertise into income through high-quality online masterclasses. Whether you&apos;re an established artist or a rising star, our platform provides the tools and audience you need to succeed.
               </p>
               <p>
                 Our unique marketplace supports both individual course purchases and subscription-based access, helping you reach more students and maximize your earning potential. From mixing and production to mastering, build your brand while teaching the next generation.
