@@ -5,8 +5,8 @@ import "./globals.css";
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "SoundSphere - Elevate Your Music Production Skills",
-  description: "Access exclusive masterclasses, sample packs, and tutorials from industry professionals.",
+  title: "SoundSphere: The Marketplace for Music Education",
+  description: "Sell your masterclasses, project files, and tutorials, reach a global audience, and keep 95% of your earnings. Start sharing your expertise today!",
 };
 
 export default function RootLayout({
