@@ -1,101 +1,170 @@
-import Image from "next/image";
+import { ArrowRightIcon, GlobeAltIcon, CurrencyDollarIcon, UserGroupIcon } from '@heroicons/react/24/outline'
+import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <main className="min-h-screen antialiased bg-primary-900">
+      {/* Hero Section */}
+      <section className="relative min-h-[100vh] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/studio-bg.jpeg"
+            alt="Music studio background"
+            fill
+            className="object-cover scale-105 transform hover:scale-100 transition-transform duration-[2s]"
+            priority
+            quality={100}
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-primary-900/70 z-10" />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+        <div className="container-width relative z-20 text-center text-white px-6 py-8 animate-fade-in">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight leading-tight drop-shadow-lg">
+          Turn Your Music Expertise into Income. <br></br>
+          Join SoundSphere Today!
+          </h1>
+          <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-normal drop-shadow-lg">
+            We're launching soon, and we are offering exclusive early access to list your masterclasses on SoundSphere. For the first 2 months, you keep 100% of the revenue—we won't take any commissions!
+          </p>
+          <Link href="/signup" className="btn-primary text-lg min-h-[44px] min-w-[200px] px-8 group inline-flex items-center">
+            Sign Up Now
+            <ArrowRightIcon className="w-5 h-5 ml-3 inline-block group-hover:translate-x-1 transition-transform" />
+          </Link>
+        </div>
+      </section>
+
+      {/* Platform Overview */}
+      <section className="section-padding bg-primary-800">
+        <div className="container-width px-6">
+          <div className="text-center max-w-4xl mx-auto mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight text-white">
+              Your Knowledge, Your Income
+            </h2>
+            <p className="text-2xl text-primary-100 font-medium mb-4">
+              Share your expertise and earn from your skills.
+            </p>
+            <div className="space-y-6 text-lg text-primary-200 leading-relaxed">
+              <p>
+                SoundSphere empowers music producers to transform their expertise into income through high-quality online masterclasses. Whether you're an established artist or a rising star, our platform provides the tools and audience you need to succeed.
+              </p>
+              <p>
+                Our unique marketplace supports both individual course purchases and subscription-based access, helping you reach more students and maximize your earning potential. From mixing and production to mastering, build your brand while teaching the next generation.
+              </p>
+            </div>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              {
+                icon: <GlobeAltIcon className="w-12 h-12 text-accent-pink" />,
+                title: 'Global Reach',
+                description: 'Connect with music producers and students worldwide',
+              },
+              {
+                icon: <CurrencyDollarIcon className="w-12 h-12 text-accent-pink" />,
+                title: '95% Revenue',
+                description: 'Keep more of what you earn with our industry-leading rates',
+              },
+              {
+                icon: <UserGroupIcon className="w-12 h-12 text-accent-pink" />,
+                title: 'For Music Professionals',
+                description: 'Designed specifically for music producers, mixing engineers, and mastering experts.',
+              },
+            ].map((feature, index) => (
+              <div
+                key={index}
+                className="text-center p-8 rounded-xl bg-primary-700/50 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+              >
+                <div className="flex justify-center mb-4">{feature.icon}</div>
+                <h3 className="text-xl font-semibold mb-3 text-white">{feature.title}</h3>
+                <p className="text-primary-200 leading-relaxed">{feature.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Why Join SoundSphere */}
+      <section className="section-padding bg-primary-900">
+        <div className="container-width px-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 tracking-tight text-white">
+            Start Earning in Three Simple Steps
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              {
+                step: '01',
+                title: 'Create Your Profile',
+                description: 'Set up your professional profile and showcase your expertise',
+              },
+              {
+                step: '02',
+                title: 'Publish & Sell',
+                description: 'Upload your content and reach your target audience',
+              },
+              {
+                step: '03',
+                title: 'Earn & Grow',
+                description: 'Start earning and expand your teaching business',
+              },
+            ].map((step, index) => (
+              <div key={index} className="relative p-8 bg-primary-800/50 rounded-xl shadow-lg">
+                <span className="absolute -top-6 left-8 text-7xl font-bold text-accent-pink/20">
+                  {step.step}
+                </span>
+                <h3 className="text-xl font-semibold mb-3 relative text-white">{step.title}</h3>
+                <p className="text-primary-200 leading-normal relative">{step.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="section-padding bg-primary-700">
+        <div className="container-width px-6">
+          <div className="text-center max-w-4xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight text-white">
+              Launching Soon!
+            </h2>
+            <p className="text-xl mb-2 leading-normal text-primary-200">
+              We're gearing up for our big launch. Join us today and on launch day,
+            </p>
+            <p className="text-2xl font-semibold mb-8 leading-normal text-white">
+              kick off with a 60 day free trial – and you'll keep 100% of your commissions.
+            </p>
+            <Link href="/signup" className="btn-primary text-lg min-h-[44px] min-w-[200px] px-8 group inline-flex items-center">
+              Join the Waitlist
+              <ArrowRightIcon className="w-5 h-5 ml-3 inline-block group-hover:translate-x-1 transition-transform" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-primary-900 text-primary-200 py-12 border-t border-primary-700">
+        <div className="container-width px-6">
+          <div className="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 className="text-white text-xl font-semibold mb-4">Quick Links</h3>
+              <ul className="space-y-3">
+                <li><Link href="/about" className="hover:text-white transition-colors py-2 inline-block min-w-[44px]">About Us</Link></li>
+                <li><Link href="/contact" className="hover:text-white transition-colors py-2 inline-block min-w-[44px]">Contact</Link></li>
+                <li><Link href="/faq" className="hover:text-white transition-colors py-2 inline-block min-w-[44px]">FAQ</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-white text-xl font-semibold mb-4">Legal</h3>
+              <ul className="space-y-3">
+                <li><Link href="/terms" className="hover:text-white transition-colors py-2 inline-block min-w-[44px]">Terms</Link></li>
+                <li><Link href="/privacy" className="hover:text-white transition-colors py-2 inline-block min-w-[44px]">Privacy</Link></li>
+              </ul>
+            </div>
+          </div>
+          <div className="mt-12 pt-8 border-t border-primary-800 text-center">
+            <p className="text-primary-300">&copy; {new Date().getFullYear()} SoundSphere. All rights reserved.</p>
+          </div>
+        </div>
       </footer>
-    </div>
-  );
+    </main>
+  )
 }
