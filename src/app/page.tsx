@@ -127,10 +127,10 @@ export default function Home() {
               Launching Soon!
             </h2>
             <p className="text-xl mb-2 leading-normal text-primary-200">
-              We're gearing up for our big launch. Join us today and on launch day,
+              We&apos;re gearing up for our big launch. Join us today and on launch day,
             </p>
             <p className="text-2xl font-semibold mb-8 leading-normal text-white">
-              kick off with a 60 day free trial – and you'll keep 100% of your commissions.
+              kick off with a 60 day free trial – and you&apos;ll keep 100% of your commissions.
             </p>
             <Link href="/signup" className="btn-primary text-lg min-h-[44px] min-w-[200px] px-8 group inline-flex items-center">
               Join the Waitlist

@@ -103,7 +103,7 @@ export default function SignUp() {
                 animate={{ opacity: 1 }}
                 className="mt-6 p-4 bg-green-500/30 border border-green-500/40 rounded-lg text-green-100 text-base text-center"
               >
-                Thank you for signing up! We'll be in touch soon.
+                Thank you for signing up! We&apos;ll be in touch soon.
               </motion.div>
             )}
 
