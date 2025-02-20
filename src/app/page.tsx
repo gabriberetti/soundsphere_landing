@@ -24,12 +24,12 @@ export default function Home() {
             Turn Your Music Expertise into Income.
           </h1>
           <div className="backdrop-blur-md bg-white/10 rounded-2xl p-8 md:p-10 shadow-xl border border-white/20 max-w-3xl mx-auto">
-            <p className="text-xl md:text-2xl mb-10 leading-relaxed drop-shadow-lg">
+            <p className="text-xl md:text-2xl mb-10 leading-relaxed drop-shadow-lg font-normal">
               We&apos;re launching soon, and we are offering exclusive early access to list your masterclasses on SoundSphere. For the first 2 months, you keep 100% of the revenue—we won&apos;t take any commissions!
             </p>
             <Link 
               href="/signup" 
-              className="btn-primary text-lg min-h-[44px] min-w-[200px] px-8 py-4 group inline-flex items-center justify-center hover:scale-105 transition-all duration-300"
+              className="btn-primary text-lg min-h-[44px] min-w-[200px] px-8 py-4 group inline-flex items-center justify-center hover:scale-105 transition-all duration-300 font-medium"
               role="button"
               aria-label="Sign up for early access"
             >
@@ -47,10 +47,10 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 tracking-tight text-white">
               Your Knowledge, Your Income
             </h2>
-            <p className="text-xl md:text-2xl text-primary-100 font-medium mb-6">
+            <p className="text-xl md:text-2xl text-primary-100 font-medium mb-6 tracking-normal">
               Share your expertise and earn from your skills.
             </p>
-            <div className="space-y-6 text-lg text-primary-200 leading-relaxed">
+            <div className="space-y-6 text-lg text-primary-200 leading-relaxed font-normal">
               <p className="max-w-3xl mx-auto">
                 SoundSphere empowers music producers to transform their expertise into income through high-quality online masterclasses. Whether you&apos;re an established artist or a rising star, our platform provides the tools and audience you need to succeed.
               </p>
@@ -82,8 +82,8 @@ export default function Home() {
                 className="text-center p-8 rounded-2xl bg-primary-700/50 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
               >
                 <div className="flex justify-center mb-6">{feature.icon}</div>
-                <h3 className="text-xl font-semibold mb-4 text-white">{feature.title}</h3>
-                <p className="text-lg text-primary-200 leading-relaxed">{feature.description}</p>
+                <h3 className="text-xl font-semibold mb-4 text-white tracking-normal">{feature.title}</h3>
+                <p className="text-lg text-primary-200 leading-relaxed font-normal">{feature.description}</p>
               </div>
             ))}
           </div>
@@ -118,8 +118,8 @@ export default function Home() {
                 <span className="absolute -top-6 left-8 text-7xl font-bold text-accent-pink/20">
                   {step.step}
                 </span>
-                <h3 className="text-xl font-semibold mb-4 relative text-white">{step.title}</h3>
-                <p className="text-lg text-primary-200 leading-relaxed relative">{step.description}</p>
+                <h3 className="text-xl font-semibold mb-4 relative text-white tracking-normal">{step.title}</h3>
+                <p className="text-lg text-primary-200 leading-relaxed relative font-normal">{step.description}</p>
               </div>
             ))}
           </div>
@@ -133,10 +133,10 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 tracking-tight text-white">
               Launching Soon!
             </h2>
-            <p className="text-xl mb-4 leading-relaxed text-primary-200">
+            <p className="text-xl mb-4 leading-relaxed text-primary-200 font-normal">
               We&apos;re gearing up for our big launch. Join us today and on launch day,
             </p>
-            <p className="text-2xl font-semibold mb-10 leading-relaxed text-white">
+            <p className="text-2xl font-semibold mb-10 leading-relaxed text-white tracking-normal">
               kick off with a 60 day free trial – and you&apos;ll keep 100% of your commissions.
             </p>
             <Link 
